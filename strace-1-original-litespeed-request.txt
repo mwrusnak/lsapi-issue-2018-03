@@ -1,0 +1,47 @@
+select(7, [6], NULL, NULL, {1, 0})      = 0 (Timeout)
+getppid()                               = 26455
+select(7, [6], NULL, NULL, {1, 0})      = 0 (Timeout)
+getppid()                               = 26455
+select(7, [6], NULL, NULL, {1, 0})      = 1 (in [6], left {0, 36897})
+read(6, "LS\1\0W\4\0\0\277\1\0\0\26\0\0\0D\1\0\0\215\1\0\0|\1\0\0\346\1\0\0\1\0\0\0\17\0\0\0\0\0\0\0\0\0\0\0\0\16\0\35DOCUMENT_ROOT\0/usr/local/lsws/Example/html\0\0\f\0\16REMOTE_ADDR\000192.168.10.18\0\0\f\0\6REMOTE_PORT\00044854\0\0\f\0\16SERVER_ADDR\000192.168.10.18\0\0\f\0\tSERVER_NAME\0wp16.dev\0\0\f\0\5SERVER_PORT\0008088\0\0\f\0\vREQUEST_URI\0/index.php\0\0\r\0\25LSWS_EDITION\0Openlitespeed 1.4.27\0\0\n\0\2X-LSCACHE\0001\0\0\20\0'SCRIPT_FILENAME\0/usr/local/lsws/Example/html/index.php\0\0\r\0\1QUERY_STRING\0\0\0\f\0\vSCRIPT_NAME\0/index.php\0\0\20\0\tSERVER_PROTOCOL\0HTTP/1.1\0\0\20\0\nSERVER_SOFTWARE\0LiteSpeed\0\0\17\0\5REQUEST_METHOD\0POST\0\0\0\0\0\0?\0\0\0\0\0\16\0\0\0\5\0!\0\2\0\35\0\0\0\r\0\0\0\36\0L\0\t\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\225\0\0\0\0\0\0\0\0\0\0\0\347\0\0\0\0\0\0\0\230\1\0\0.\1\0\0a\1\0\0m\1\0\0\0\0\0\0$\0\0\0\0\0\0\0\0\1\0\0?\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\237\1\0\0\31\0\0\0\272\1\0\0\1\0\0\0\0\0\0\0POST /index.php HTTP/1.1\r\nHost: wp16.dev:8088\r\nUser-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:58.0) Gecko/20100101 Firefox/58.0\r\nAccept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\r\nAccept-Language: en-US,en;q=0.5\r\nReferer: http://wp16.dev:8088/index.php\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: 22\r\nCookie: wp-settings-time-1=1491621002\r\nConnection: close\r\nUpgrade-Insecure-Requests: 1\r\n\r\ntheText=&submit=Submit", 8192) = 1133
+write(6, "LS\7\0\10\0\0\0", 8)          = 8
+rt_sigaction(SIGPROF, NULL, {0x8631e0, [], SA_RESTORER|SA_SIGINFO, 0x7fcb712334b0}, 8) = 0
+rt_sigaction(SIGHUP, NULL, {0x8631e0, [], SA_RESTORER|SA_SIGINFO, 0x7fcb712334b0}, 8) = 0
+rt_sigaction(SIGINT, NULL, {0x8631e0, [], SA_RESTORER|SA_SIGINFO, 0x7fcb712334b0}, 8) = 0
+rt_sigaction(SIGQUIT, NULL, {0x8631e0, [], SA_RESTORER|SA_SIGINFO, 0x7fcb712334b0}, 8) = 0
+rt_sigaction(SIGTERM, NULL, {0x8631e0, [], SA_RESTORER|SA_SIGINFO, 0x7fcb712334b0}, 8) = 0
+rt_sigaction(SIGUSR1, NULL, {0x8631e0, [], SA_RESTORER|SA_SIGINFO, 0x7fcb712334b0}, 8) = 0
+rt_sigaction(SIGUSR2, NULL, {0x8631e0, [], SA_RESTORER|SA_SIGINFO, 0x7fcb712334b0}, 8) = 0
+setitimer(ITIMER_PROF, {it_interval={0, 0}, it_value={60, 0}}, NULL) = 0
+rt_sigaction(SIGPROF, {0x8631e0, [], SA_RESTORER|SA_SIGINFO, 0x7fcb712334b0}, NULL, 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [PROF], NULL, 8) = 0
+getcwd("/usr/local/lsws/fcgi-bin", 4095) = 25
+chdir("/usr/local/lsws/Example/html")   = 0
+setitimer(ITIMER_PROF, {it_interval={0, 0}, it_value={30, 0}}, NULL) = 0
+lstat("/usr/local/lsws/Example/html/index.php", {st_mode=S_IFREG|0644, st_size=483, ...}) = 0
+open("/usr/local/lsws/Example/html/index.php", O_RDONLY) = 4
+fstat(4, {st_mode=S_IFREG|0644, st_size=483, ...}) = 0
+fstat(4, {st_mode=S_IFREG|0644, st_size=483, ...}) = 0
+fstat(4, {st_mode=S_IFREG|0644, st_size=483, ...}) = 0
+mmap(NULL, 483, PROT_READ, MAP_SHARED, 4, 0) = 0x7fcb7324e000
+munmap(0x7fcb7324e000, 483)             = 0
+close(4)                                = 0
+stat("/tmp/before_reading_php_input_stream", 0x7ffcd7e2fd90) = -1 ENOENT (No such file or directory)
+open("php_errors.log", O_WRONLY|O_CREAT|O_APPEND, 0644) = 4
+write(4, "[05-Mar-2018 02:14:01 UTC] PHP Warning:  stat(): stat failed for /tmp/before_reading_php_input_stream in /usr/local/lsws/Example/html/index.php on line 14\n", 155) = 155
+close(4)                                = 0
+stat("/tmp/after_reading_php_input_stream", 0x7ffcd7e2fd90) = -1 ENOENT (No such file or directory)
+open("php_errors.log", O_WRONLY|O_CREAT|O_APPEND, 0644) = 4
+write(4, "[05-Mar-2018 02:14:01 UTC] PHP Warning:  stat(): stat failed for /tmp/after_reading_php_input_stream in /usr/local/lsws/Example/html/index.php on line 16\n", 154) = 154
+close(4)                                = 0
+chdir("/usr/local/lsws/fcgi-bin")       = 0
+setitimer(ITIMER_PROF, {it_interval={0, 0}, it_value={0, 0}}, NULL) = 0
+setitimer(ITIMER_PROF, {it_interval={0, 0}, it_value={0, 0}}, NULL) = 0
+writev(6, [{"LS\3\0009\0\0\0\1\0\0\0\310\0\0\0'\0", 18}, {"Content-type: text/html; charset=UTF-8\0", 39}, {"LS\4\0\0\1\0\0", 8}, {"<!doctype html>\n<html>\n<head></head>\n<body>\n\n<p>A form</p>\n<form action=\"index.php\" method=\"post\">\n\t<input type=\"text\" name=\"theText\" id=\"theText\">\n\t<input type=\"submit\" value=\"Submit\" name=\"submit\">\n</form>\n\ntheText=&submit=Submit\n</body>\n</html>\n", 248}, {"LS\5\0\10\0\0\0", 8}], 5) = 321
+select(7, [6], NULL, NULL, {1, 0})      = 0 (Timeout)
+getppid()                               = 26455
+select(7, [6], NULL, NULL, {1, 0})      = 0 (Timeout)
+getppid()                               = 26455
+select(7, [6], NULL, NULL, {1, 0})      = 0 (Timeout)
+getppid()                               = 26455
+select(7, [6], NULL, NULL, {1, 0})      = 0 (Timeout)
